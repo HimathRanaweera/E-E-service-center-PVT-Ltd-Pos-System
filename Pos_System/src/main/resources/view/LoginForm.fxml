@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<BorderPane fx:id="pane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ebc357;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.loginFormController">
+    <center>
+        <GridPane BorderPane.alignment="CENTER">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints maxHeight="186.0" minHeight="10.0" prefHeight="171.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="291.0" minHeight="10.0" prefHeight="229.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+                <GridPane prefHeight="242.0" prefWidth="600.0" GridPane.rowIndex="1">
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="23.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="53.0" minHeight="10.0" prefHeight="53.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="52.0" minHeight="10.0" prefHeight="48.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="31.0" minHeight="10.0" prefHeight="25.0" valignment="CENTER" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="userNameTextField" maxWidth="-Infinity" onAction="#userNameTextFieldOnAction" prefHeight="37.0" prefWidth="339.0" promptText="User Name" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                            
+                        </TextField>
+                        <PasswordField fx:id="userNamePasswordTextField" maxHeight="-Infinity" maxWidth="-Infinity" onAction="#userNamePasswordTextFieldOnAction" prefHeight="35.0" prefWidth="339.0" promptText="Password" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+
+                        </PasswordField>
+                        <Button fx:id="loginButton" mnemonicParsing="false" onAction="#loginButtonOnAction" prefHeight="35.0" prefWidth="127.0" text="Login" GridPane.halignment="CENTER" GridPane.rowIndex="5" GridPane.valignment="CENTER" />
+                    </children>
+                </GridPane>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                            <image>
+                                <Image url="@../img/Screenshot%202024-01-31%20212214.png" />
+                            </image>
+                        </ImageView>
+
+                    </children>
+                </GridPane>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>
