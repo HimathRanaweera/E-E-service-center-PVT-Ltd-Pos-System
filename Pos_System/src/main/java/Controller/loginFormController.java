@@ -20,7 +20,7 @@ public class loginFormController {
     public void loginButtonOnAction(ActionEvent actionEvent) {
         Stage stage = (Stage) pane.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CustomerForm.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DashboardForm.fxml"))));
             stage.show();
         } catch (IOException e) {
             e.printStackTrace();
