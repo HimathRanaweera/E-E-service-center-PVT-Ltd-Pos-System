@@ -22,26 +22,20 @@ public class DashboardFormController {
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/CategoryForm.fxml"))));
             stage.show();
+            stage.setTitle("CategoryForm");
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
 
-    public void ItemsButtonOnAction(ActionEvent actionEvent) {
-        Stage stage = (Stage) Pane.getScene().getWindow();
-        try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ItemsForm.fxml"))));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 
     public void OrdersButtonOnAction(ActionEvent actionEvent) {
         Stage stage = (Stage) Pane.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DashboardForm.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/OrdersForm.fxml"))));
             stage.show();
+            stage.setTitle("OrdersForm");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -50,8 +44,9 @@ public class DashboardFormController {
     public void ReportsButtonOnAction(ActionEvent actionEvent) {
         Stage stage = (Stage) Pane.getScene().getWindow();
         try {
-            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/DashboardForm.fxml"))));
+            stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ReportsForm.fxml"))));
             stage.show();
+            stage.setTitle("ReportsForm");
         } catch (IOException e) {
             e.printStackTrace();
         }

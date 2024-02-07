@@ -1,0 +1,5 @@
+.root {
+    -fx-background-image: url("img/icons8-back-64.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
